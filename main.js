@@ -1,7 +1,48 @@
 /******************
  * YOUR CODE HERE *
- ******************
+ ******************/
 
+function getFirstItemFrom(arr){
+  return arr[0];
+}
+
+function getLastItemFrom(arr){
+  return arr[arr.length-1];
+}
+
+function getIndex3(arr){
+  if(arr.length >= 4){
+    return arr[3];
+  }else if(arr.length < 4){
+    return arr[arr.length - 1]
+  }
+}
+
+function isLongList(arr){
+  if(arr.length >= 10){
+    return true;
+  }else if(arr.length < 10){
+    return false;
+  }
+}
+
+function firstItemIsNumber(arr){
+  if(typeof arr[0] === 'number'){
+    return true;
+  }else if(typeof arr[0] === 'string'){
+    return false;
+  }else if(typeof arr[0] === 'boolean'){
+    return false;
+  }else if(Array.isArray(arr[0]) === true){
+    return false;
+  }else if(typeof arr[0] === 'function'){
+    return false;
+  }
+}
+
+function secondCharOfThirdString(arr){
+  return arr[2].charAt(1)
+}
 
 
 
